@@ -1,4 +1,8 @@
-@import url('https://fonts.google.com/specimen/Poppins');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    }
 
 .main{
     width: 100%;
@@ -6,143 +10,51 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 250vh;
 }
 
-@media only screen and (min-width: 200px) and (max-width:900px){
-    .box{
-    position: relative;
-    width: 550px;
-    height: 200px;
-    filter: drop-shadow(0 15px 50px #000);
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    }
-}
-
-*{
-font-family: 'Poppins', sans-serif;
-}
-
-.box::before{
-    content: '';
+.judul{
+    width: 250px;
+    height: 380px;   
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
     position: absolute;
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(0 15px 50px #000);
-    border-radius: 20px;
-}
-
-.box::after{
-    content: '';
-    position: absolute;
-    inset: 4px;
-    background: #B5828C;
-    border-radius: 15px;
-    border: 8px solid #634349;
-}
-
-.box:hover{
-    width: 450px;
-    height: 500px;
-}
-
-.box:hover .login{
-    inset: 40px;
-}
-
-.box:hover .loginbx{
-    transform: translateY(0px);;
-}
-
-.login{
-    position: absolute;
-    inset: 60px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
+    top: 150px;
+    left: 525px;
     border-radius: 10px;
-    background: #0033;
-    color: #fff;
-    z-index: 1000;
-    box-shadow: inset 0 10px 20px #0000;
-    border-bottom: 2px solid #fff;
-    transition: 0.5s;
-    overflow: hidden;
+    padding: 25px;
 }
 
-.loginbx{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 22px;
-    width: 70%;
-    transform: translateY(126px);
-    transition: 0.5s;
+.judul h2{
+    width: 220px;
+    font-family: 'Poppins';
+    text-align: center;
+    color: #B5828C;
+    font-size: 22px;
+    background-color: #F8F3D9;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
 }
 
-h2{
-    text-transform: uppercase;
-    font-weight: 550;
-    letter-spacing: 0.1em;
-}
-
-h2 i{
-    color: #ff2770;
-    text-shadow: 
-    0 0 5px #ff2770,
-    0 0 20px #ff2770;
-}
-
-.btn{
-    width: 100%;
-    padding: 10px 20px;
-    outline: none;
+.cn{
+    width: 240px;
+    height: 40px;
+    background: #B5828C;
     border: none;
-    font-size: lem;
-    color: #F8F3D9;
-    background: #F8F3D9;
-    border: none;
-    border-radius: 30px;
-}
-
-.btn[type="Absensi"]{
-    background: #45f3ff;
-    border: none;
-    font-weight: 500;
-    color: #000;
+    margin-top: 18px;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.5s ease;
+    color: #F8F3D9;
+    transition: 0.4s ease;
 }
 
-.btn:hover{
-    background: #a4a4be;
+.cn:hover{
+    background: #F8F3D9;
     color: #B5828C;
 }
-.btn[type="Absensi"]:hover{
-    box-shadow:
-    0 0 10px #45f3ff,
-    0 0 60px #45f3ff;
-}
 
-.group{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.group a{
-    color: #fff;
+.cn a{
     text-decoration: none;
-}
-
-.group a:nth-child(2){
-    color: #ff2770;
-    font-weight: 600;
+    color: #000;
 }
