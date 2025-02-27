@@ -1,18 +1,7 @@
 @import url('https://fonts.google.com/specimen/Poppins');
 
-@media only screen and (max-width: 600px)
-
-*{
-font-family: 'Poppins', sans-serif;
-}
-
-@property --a{
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-
-.box{
+@media only screen and (max-width: 600px){
+    .box{
     position: relative;
     width: 550px;
     height: 200px;
@@ -21,6 +10,11 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    }
+}
+
+*{
+font-family: 'Poppins', sans-serif;
 }
 
 .box::before{
